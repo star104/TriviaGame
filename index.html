@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+<br>
+<br>
+<br>
+
+  <h1>Harry Potter Quiz</h1>
+  
+  <div id ="startButton"><button id="start">Start Game!</button></div>
+
+  <div id="myQuestions">
+  <h2>Timer: <span id="timer-text"></span></h2>
+
+<p>Who does Harry accuse of trying to steal the philosopher's stone in book 1?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question1" value="Lord Voldemort" >Lord Voldemort<br>
+  <input type="radio" name="question1" value="Severus Snape"> Severus Snape<br>
+  <input type="radio" name="question1" value="Professor Quirrel"> Professor Q<br><br>
+</form> 
+
+<p>Where is the entrance to the Chamber of Secrets?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question2" value="In the Slytherin commom room" >In the Slytherin commom room<br>
+  <input type="radio" name="question2" value="In the girls bathroom where Moaning Myrtle">In the girls bathroom where Moaning Myrtle<br>
+  <input type="radio" name="question2" value="Under the Whomping Willow">Under the Whomping Willow<br>
+</form>
+ 
+<br>
+<p>Who was the Potter's secret keeper before they died?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question3" value="Albus Dumbledore" >In the Slytherin commom room<br>
+  <input type="radio" name="question3" value="Peter Pettigrew"> Peter Pettigrew<br>
+  <input type="radio" name="question3" value="Sirius Black"> Sirius Blsck<br><br>
+</form> 
+
+<p>Who did Hermione take to the Yule Ball in book 4?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question4" value="Ron Weasley" >Ron Weasley<br>
+  <input type="radio" name="question4" value="Cedric Diggory"> Cedric Diggory<br>
+  <input type="radio" name="question4" value="Viktor Krum"> Viktor Krum<br><br>
+</form>
+
+<p>Did Harry & Dumbledore find the horcrux in book 6?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question5" value="Yes" >Yes<br>
+  <input type="radio" name="question5" value="No" > No<br>
+  <input type="radio" name="question5" value="Others" > Others<br><br>
+</form>
+
+<p>What does the triangle stand for?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question6" value="The Invisibility Cloak" >The Invisibility Cloak<br>
+  <input type="radio" name="question6" value="Nothing"> Nothing<br>
+  <input type="radio" name="question6" value="Butterbeer"> Butterbeer<br><br>
+</form>
+
+<p>Who does Harry Potter marry?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question7" value="Hermione" > Hermione<br>
+  <input type="radio" name="question7" value="Cho Chang"> Cho Chang<br>
+  <input type="radio" name="question7" value="Ginny Weasley"> Ginny Weasley<br><br>
+</form>
+
+<p>How many children dose Harry Potter get?</p>
+<form action="/action_page.php">
+  <input type="radio" name="question8" value="3" >3<br>
+  <input type="radio" name="question8" value="2"> 2<br>
+  <input type="radio" name="question8" value="4" > 4<br><br>
+</form>
+<div><button id="submit">Submit</button></div>
+  </div>
+
+  <div id="finalResult"> 
+    <h2>Final Result</h2>
+    <div id=winAn>
+      
+    </div>
+    <div id=wrongAn>
+      
+    </div>
+    <div id=unAn>
+
+    </div>
+  </div> 
+
+</body>
+</html>
+
+<script src="assets/JS/game.js"></script>

@@ -1,0 +1,43 @@
+body{
+    background-image: url('../Image/background.png');
+
+    /* Full height */
+  
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+}
+
+#myQuestions
+{
+    visibility: hidden;
+}
+
+#start { 
+    height:50px;
+    width:300px;
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#finalResult{        
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+h1{
+font-style: italic;
+font-size:40px;
+text-align: center;
+
+}
